@@ -2,7 +2,7 @@ import 'package:app/screens/criar_rota.dart';
 import 'package:app/screens/home.dart';
 import 'package:flutter/material.dart';
 
-class MainPage extends StatefulWidget {
+class MainPage extends StatefulWidget { //controle do rodape e botao flutuante
   const MainPage({super.key});
 
   @override
@@ -23,6 +23,7 @@ class _MainPageState extends State<MainPage> {
 
       floatingActionButton: FloatingActionButton(
         onPressed: () {
+          //botao flutuante abre a pagina de criar rota
           Navigator.push(context, MaterialPageRoute(builder: (_) =>CriarRota()));
         },
         child: const Icon(Icons.add),
